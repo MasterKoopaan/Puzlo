@@ -7,7 +7,7 @@
         <li><a href="#">About</a>
           <ul>
             <li><a href="about.php#puzlo">Puzlo</a></li>
-            <li><a href="#">Signup</a></li>
+            <li><a href="login-signup-page.php">Signup</a></li>
             <li><a href="#">FAQ</a></li>
             <li><a href="about-join.php">Join</a></li>
           </ul>
