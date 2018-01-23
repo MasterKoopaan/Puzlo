@@ -1,0 +1,43 @@
+/* about sections */
+
+/* about container */
+
+#container-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: 8500px;
+  margin: 0 auto;
+}
+
+#container-about .kopje {
+  grid-column-end: span 2;
+  margin: 1rem 0;
+  justify-self: start;
+}
+
+#container-about .kopje h1 {
+  font-size: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--puzlo-rood);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-rood-darker);
+  border-radius: 20px;
+  color: #fff;
+}
+
+.info, .image {
+  width: 30vw;
+  height: 30vw;
+  background-color: var(--bar-2-bg-color);
+  justify-self: center;
+  border-radius: 40px;
+}
+
+.info p {
+  padding: 0.8rem;
+}
+
+.image.puzlo {
+  background: url(../img/720p-temp.png) center center no-repeat;
+  background-size: cover;
+}

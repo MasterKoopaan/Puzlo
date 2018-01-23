@@ -1,0 +1,276 @@
+#nav-desktop, #nav-desktop ul, #nav-desktop ul li {
+  height: 100%;
+  z-index: 4;
+}
+
+#header-nav li {
+  list-style: none;
+}
+
+#header-nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#header-nav div ul li {
+  float: left;
+}
+
+#header-nav div ul li a {
+  position: relative;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 9rem;
+  margin-right: 1rem;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  border-radius: 0.4rem;
+  background-color: var(--puzlo-blauw);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-blauw-darker);
+}
+
+#nav-desktop ul li a:hover {
+  transform: translate(0.2rem, calc(-50% + 0.2rem));
+  box-shadow: 0.2rem 0.2rem var(--puzlo-blauw-darker);
+  transition: all 200ms linear;
+}
+
+#nav-desktop ul li ul {
+  position: absolute;
+  display: none;
+  margin-top: 1rem;
+  height: 12rem;
+  z-index: 4;
+}
+
+#nav-desktop ul li ul li {
+  float: none;
+  height: 2.5rem;
+  margin-top: 0.4rem;
+}
+
+#nav-desktop ul li ul li a {
+  background-color: var(--puzlo-bg-blauw);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-bg-blauw-darker);
+  border-radius: 0;
+}
+
+#nav-desktop ul li ul li a:hover {
+  transform: translate(0.2rem, calc(-50% + 0.2rem));
+  box-shadow: 0.2rem 0.2rem var(--puzlo-bg-blauw-darker);
+  transition: all 200ms linear;
+}
+
+#nav-desktop ul li:hover ul {
+  display: block;
+}
+
+/* #header-nav {
+  height: 100%;
+  z-index: 4;
+}
+
+#header-nav div, #header-nav div ul {
+  height: 100%;
+}
+
+#header-nav div ul li a {
+  position: relative;
+  display: inline-block;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10rem;
+  background-color: #fff;
+  border-radius: 20px;
+  font: 1.5rem;
+  padding: 1rem;
+  list-style: none;
+  text-decoration: none;
+}
+
+#header-nav div li ul {}
+
+#header-nav div li ul li {} */
+
+/*--- header ---*/
+
+#header {
+  display: flex;
+  height: var(--header-height);
+  margin: 0 0.5rem;
+  border-radius: 0 0 20px 20px;
+  background-color: var(--puzlo-bg-blauw);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-bg-blauw-darker);
+}
+
+/*header element 1: navigatie*/
+
+#header-nav {
+  justify-content: flex-start;
+  margin-left: 1rem;
+  height: 100%;
+}
+
+/*header element 1.1: desktop navigatie*/
+
+#nav-desktop, #nav-desktop ul, #nav-desktop ul li {
+  height: 100%;
+  z-index: 4;
+}
+
+#header-nav li {
+  list-style: none;
+}
+
+#header-nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#header-nav div ul li {
+  float: left;
+}
+
+#header-nav div ul li a {
+  position: relative;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 9rem;
+  margin-right: 1rem;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  border-radius: 0.4rem;
+  background-color: var(--puzlo-blauw);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-blauw-darker);
+}
+
+#nav-desktop ul li a:hover {
+  transform: translate(0.2rem, calc(-50% + 0.2rem));
+  box-shadow: 0.2rem 0.2rem var(--puzlo-blauw-darker);
+  transition: all 200ms linear;
+}
+
+#nav-desktop ul li ul {
+  position: absolute;
+  display: none;
+  margin-top: 1rem;
+  height: 12rem;
+  z-index: 4;
+}
+
+#nav-desktop ul li ul li {
+  float: none;
+  height: 2.5rem;
+  margin-top: 0.4rem;
+}
+
+#nav-desktop ul li ul li a {
+  background-color: var(--puzlo-bg-blauw);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-bg-blauw-darker);
+  border-radius: 0;
+}
+
+#nav-desktop ul li ul li a:hover {
+  transform: translate(0.2rem, calc(-50% + 0.2rem));
+  box-shadow: 0.2rem 0.2rem var(--puzlo-bg-blauw-darker);
+  transition: all 200ms linear;
+}
+
+#nav-desktop ul li:hover ul {
+  display: block;
+}
+
+/* #header-nav {
+  height: 100%;
+  z-index: 4;
+}
+
+#header-nav div, #header-nav div ul {
+  height: 100%;
+}
+
+#header-nav div ul li a {
+  position: relative;
+  display: inline-block;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10rem;
+  background-color: #fff;
+  border-radius: 20px;
+  font: 1.5rem;
+  padding: 1rem;
+  list-style: none;
+  text-decoration: none;
+}
+*/
+
+/*header element 1.2: mobele/small navigatie*/
+
+/*header element 2: logo*/
+
+#header-logo {
+  justify-content: center;
+}
+
+#header-logo img {
+  height: 5rem;
+  transform: translateX(-50%);
+}
+
+/*header element 3: user-actions*/
+
+#header-user {
+  height: 100%;
+}
+
+/*header element 3.1: niet ingelogt*/
+
+#user-login {
+  justify-content: flex-end;
+  height: 100%;
+  margin-right: 1.5rem;
+}
+
+#user-login .button-nav {
+  position: relative;
+  display: inline-block;
+  width: 9rem;
+  padding: 0.5rem 0;
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  margin-right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 1rem;
+  transition: all 200ms linear;
+}
+
+#user-login .login:hover {
+  transform: translate(0.2rem, calc(-50% + 0.2rem));
+  box-shadow: 0.2rem 0.2rem var(--puzlo-groen-darker);
+}
+
+#user-login .login {
+  background-color: var(--puzlo-groen);
+  border-color: var(--puzlo-groen);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-groen-darker);
+}
+
+#user-login .signup:hover {
+  transform: translate(0.2rem, calc(-50% + 0.2rem));
+  box-shadow: 0.2rem 0.2rem var(--puzlo-rood-darker);
+}
+
+#user-login .signup {
+  background-color: var(--puzlo-rood);
+  border-color: var(--puzlo-rood);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-rood-darker);
+}
+
+/*header element 3.1: wel ingelogt*/

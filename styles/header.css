@@ -1,0 +1,138 @@
+/*--- header ---*/
+
+#header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  /*zet logo in midden, links en rechts zijn evengroot*/
+  height: var(--header-height);
+  margin: 0 0.5rem;
+  border-radius: 0 0 20px 20px;
+  background-color: var(--puzlo-bg-blauw);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-bg-blauw-darker);
+}
+
+/*header element 1: navigatie*/
+
+#navigatie li {
+  list-style: none;
+}
+
+#header-nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*header element 1.1: header navigatie*/
+
+#header-nav>ul {
+  margin-left: 0.5rem;
+  display: flex;
+  height: var(--header-height);
+  align-items: center;
+}
+
+#header-nav>ul>li>a {
+  display: block;
+  text-align: center;
+  width: 9rem;
+  margin-right: 1rem;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  border-radius: 0.4rem;
+  background-color: var(--puzlo-blauw);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-blauw-darker);
+}
+
+#header-nav>ul>li>a:hover {
+  transform: translate(0.2rem, 0.2rem);
+  box-shadow: 0.2rem 0.2rem var(--puzlo-blauw-darker);
+  transition: all 200ms linear;
+}
+
+/*dropdown*/
+
+#header-nav>ul>li>ul {
+  display: none;
+  position: absolute;
+  z-index: 4;
+  padding-top: 1rem;
+}
+
+#header-nav>ul>li:hover>ul, #header-nav>ul>li>ul:hover {
+  /*activeer dropdown*/
+  display: block;
+}
+
+#header-nav>ul>li>ul>li>a {
+  display: block;
+  text-align: center;
+  width: 9rem;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  background-color: var(--puzlo-bg-blauw);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-bg-blauw-darker);
+  border-radius: 0;
+}
+
+#header-nav>ul>li>ul>li>a:hover {
+  transform: translate(0.2rem, 0.2rem);
+  box-shadow: 0.2rem 0.2rem var(--puzlo-bg-blauw-darker);
+  transition: all 200ms linear;
+}
+
+/*header element 1.2: mobele/small navigatie*/
+
+/*header element 2: logo*/
+
+#header-logo img {
+  height: var(--header-height);
+}
+
+/*header element 3: user-actions*/
+
+#user-login {
+  margin-right: 1.5rem;
+  display: flex;
+  height: var(--header-height);
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/*header element 3.1: niet ingelogt*/
+
+#user-login .button-nav {
+  flex: 1;
+  max-width: 9rem;
+  padding: 0.5rem 0;
+  margin-right: 1rem;
+  border-radius: 1rem;
+  transition: all 200ms linear;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+#user-login .login:hover {
+  transform: translate(0.2rem, 0.2rem);
+  box-shadow: 0.2rem 0.2rem var(--puzlo-groen-darker);
+}
+
+#user-login .login {
+  background-color: var(--puzlo-groen);
+  border-color: var(--puzlo-groen);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-groen-darker);
+}
+
+#user-login .signup:hover {
+  transform: translate(0.2rem, 0.2rem);
+  box-shadow: 0.2rem 0.2rem var(--puzlo-rood-darker);
+}
+
+#user-login .signup {
+  background-color: var(--puzlo-rood);
+  border-color: var(--puzlo-rood);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-rood-darker);
+}
+
+/*header element 3.1: wel ingelogt*/

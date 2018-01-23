@@ -1,0 +1,232 @@
+/*about-join puzlo as company page*/
+
+/* header titel */
+
+.titelheader {
+  display: flex;
+  margin: 1rem 1.5rem 0 1.5rem;
+  background-color: var(--puzlo-groen);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-groen-darker);
+  height: 3.5rem;
+  border-radius: 1rem;
+  justify-content: center;
+}
+
+.titelheader h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin: auto 0;
+  text-shadow: 0.2rem 0.2rem var(--puzlo-grijs);
+}
+
+/* container-aboutgrid grid */
+
+.container-aboutgrid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 0.5rem;
+  grid-template-areas: "t1 i1 t2 i2" "i4 t4 i3 t3" "t5 i5 t6 i6";
+}
+
+/* about items */
+
+.about-item {
+  position: relative;
+  margin: 1rem;
+  height: calc((100vw - 8rem) * 0.25);
+  /* background-color: var(--puzlo-rood); */
+  border-radius: 40px;
+}
+
+/* item imgages en kleurer items */
+
+.about-item.img:before {
+  opacity: 0.7;
+  border-radius: 40px;
+}
+
+/*kleur item 2 * 6 */
+
+.about-item.text-1 {
+  background-color: var(--puzlo-rood);
+}
+
+.about-item.img-1:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--puzlo-rood);
+}
+
+.about-item.text-2 {
+  background-color: var(--puzlo-blauw);
+}
+
+.about-item.img-2:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--puzlo-blauw);
+}
+
+.about-item.text-3 {
+  background-color: var(--puzlo-oranje);
+}
+
+.about-item.img-3:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--puzlo-oranje);
+}
+
+.about-item.text-4 {
+  background-color: var(--puzlo-geel);
+}
+
+.about-item.img-4:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--puzlo-geel);
+}
+
+.about-item.text-5 {
+  background-color: var(--puzlo-groen);
+}
+
+.about-item.img-5:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--puzlo-groen);
+}
+
+.about-item.text-6 {
+  background-color: var(--puzlo-rood);
+}
+
+.about-item.img-6:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  /* paars!!!! */
+  background-color: var(--puzlo-rood);
+}
+
+/* images van items * 6 */
+
+.container-aboutgrid .img-1 {
+  background: url(../img/bgimg-redcable.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.container-aboutgrid .img-2 {
+  background: url(../img/bgimg-puzzel.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.container-aboutgrid .img-3 {
+  background: url(../img/bgimg-statstablet.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.container-aboutgrid .img-4 {
+  background: url(../img/bgimg-puzzelstukjes.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.container-aboutgrid .img-5 {
+  background: url(../img/720p-temp.png) center center no-repeat;
+  background-size: cover;
+}
+
+.container-aboutgrid .img-6 {
+  background: url(../img/720p-temp.png) center center no-repeat;
+  background-size: cover;
+}
+
+/* media query grid en items*/
+
+@media (max-width: 1200px) {
+  .container-aboutgrid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "t1 i1 t2" "i3 t3 i2" "t4 i4 t5" "i6 t6 i5";
+  }
+  .about-item {
+    margin: 0.7rem;
+    height: calc((100vw - 4.2rem) * 0.33);
+  }
+}
+
+@media (max-width: 700px) {
+  .container-aboutgrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "t1 i1" "i2 t2" "t3 i3" "i4 t4" "t5 i5" "i6 t6";
+  }
+  .about-item {
+    margin: 0.6rem;
+    height: calc((100vw - 2.4rem) * 0.5);
+    border-radius: 30px;
+  }
+  .about-item.img:before {
+    border-radius: 30px;
+  }
+}
+
+/* grid-area voor orderen; t = text, i = img(image)*/
+
+.text-1 {
+  grid-area: t1;
+}
+
+.img-1 {
+  grid-area: i1;
+}
+
+.text-2 {
+  grid-area: t2;
+}
+
+.img-2 {
+  grid-area: i2;
+}
+
+.text-3 {
+  grid-area: t3;
+}
+
+.img-3 {
+  grid-area: i3;
+}
+
+.text-4 {
+  grid-area: t4;
+}
+
+.img-4 {
+  grid-area: i4;
+}
+
+.text-5 {
+  grid-area: t5;
+}
+
+.img-5 {
+  grid-area: i5;
+}
+
+.text-6 {
+  grid-area: t6;
+}
+
+.img-6 {
+  grid-area: i6;
+}

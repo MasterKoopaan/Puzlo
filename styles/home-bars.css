@@ -1,0 +1,138 @@
+/*--- bars homepage ---*/
+
+/*bars container*/
+
+#bars {
+  display: flex;
+  border-radius: 40px;
+  margin: 1rem;
+  height: calc(100vh - 2rem - var(--header-height));
+}
+
+/*bar containers*/
+
+#bars div {
+  position: relative;
+  flex: 1;
+  transition: var(--speed) flex ease-in-out;
+}
+
+#bar-1 {
+  box-shadow: 0.6rem 0.6rem var(--puzlo-rood-darker);
+  background: url(../img/bgimg-penblokjespapier.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+#bar-2 {
+  box-shadow: 0.6rem 0.6rem var(--puzlo-blauw-darker);
+  background: url(../img/bgimg-puzzel.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+#bar-3 {
+  box-shadow: 0.6rem 0.6rem var(--puzlo-groen-darker);
+  background: url(../img/bgimg-keykeyboard.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+#bar-1:hover, #bar-2:hover, #bar-3:hover {
+  flex: 3;
+}
+
+/* opacity kleur bars */
+
+#bar-1:before, #bar-2:before, #bar-3:before {
+  opacity: 0.7;
+}
+
+/*bars kleur*/
+
+#bar-1:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--puzlo-rood);
+}
+
+#bar-2:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--puzlo-blauw);
+}
+
+#bar-3:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--puzlo-groen);
+}
+
+/*radius bars*/
+
+#bar-1, #bar-1:before {
+  border-radius: 40px 0px 0px 40px;
+}
+
+#bar-3, #bar-3:before {
+  border-radius: 0px 40px 40px 0px;
+}
+
+/*bars inhoud opmaak*/
+
+#bars div h1 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  color: #fff;
+  text-shadow: 0.3rem 0.3rem var(--puzlo-grijs);
+}
+
+#bars div p {
+  position: absolute;
+  top: 22%;
+  color: #fff;
+  width: 80%;
+  margin-left: 10%;
+}
+
+#bars div a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 0.8rem 0;
+  border: 0.2rem solid #fff;
+  border-radius: 1rem;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 6%;
+  width: 15rem;
+  box-shadow: 0.3rem 0.3rem var(--puzlo-grijs);
+}
+
+#bars div a:hover {
+  color: #d5dae2;
+  border-color: #d5dae2;
+}
+
+/*bars homepage media querys*/
+
+@media (max-width: 670px) {
+  #bars {
+    flex-direction: column;
+  }
+  #bar-1, #bar-1:before {
+    border-radius: 40px 40px 0px 0px;
+  }
+  #bar-3, #bar-3:before {
+    border-radius: 0px 0px 40px 40px;
+  }
+}
