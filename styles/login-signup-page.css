@@ -9,29 +9,29 @@
   height: calc(100vh - 2rem - var(--header-height));
 }
 
-#container-log-sign .bar {
+#container-log-sign>.block {
   position: relative;
   flex: 1;
   transition: var(--speed) flex ease-in-out;
 }
 
-/* activate bar */
+/* activate block */
 
 /* TODO: java class togle */
 
-#container-log-sign .bar-display {
+#container-log-sign>.block-display {
   flex: 5;
 }
 
 /* afbeeldingen, matching homepage */
 
-#container-log-sign .login {
+#container-log-sign>.login {
   box-shadow: 0.6rem 0.6rem var(--puzlo-groen-darker);
   background: url(../img/bgimg-keykeyboard.jpg) center center no-repeat;
   background-size: cover;
 }
 
-#container-log-sign .sign-up {
+#container-log-sign>.sign-up {
   box-shadow: 0.6rem 0.6rem var(--puzlo-rood-darker);
   background: url(../img/bgimg-penblokjespapier.jpg) center center no-repeat;
   background-size: cover;
@@ -39,13 +39,13 @@
 
 /* opacity kleur bars */
 
-#container-log-sign .login:before, #container-log-sign .sign-up:before {
+#container-log-sign>.login:before, #container-log-sign>.sign-up:before {
   opacity: 0.7;
 }
 
 /*bars kleur*/
 
-#container-log-sign .login:before {
+#container-log-sign>.login:before {
   position: absolute;
   content: "";
   width: 100%;
@@ -53,7 +53,7 @@
   background-color: var(--puzlo-groen);
 }
 
-#container-log-sign .sign-up:before {
+#container-log-sign>.sign-up:before {
   position: absolute;
   content: "";
   width: 100%;
@@ -63,11 +63,11 @@
 
 /*radius bars*/
 
-#container-log-sign .login, #container-log-sign .login:before {
+#container-log-sign>.login, #container-log-sign>.login:before {
   border-radius: 40px 0px 0px 40px;
 }
 
-#container-log-sign .sign-up, #container-log-sign .sign-up:before {
+#container-log-sign>.sign-up, #container-log-sign>.sign-up:before {
   border-radius: 0px 40px 40px 0px;
 }
 
@@ -77,10 +77,10 @@
   #container-log-sign {
     flex-direction: column;
   }
-  #container-log-sign .login, #container-log-sign .login:before {
+  #container-log-sign>.login, #container-log-sign>.login:before {
     border-radius: 40px 40px 0px 0px;
   }
-  #container-log-sign .sign-up, #container-log-sign .sign-up:before {
+  #container-log-sign>.sign-up, #container-log-sign>.sign-up:before {
     border-radius: 0px 0px 40px 40px;
   }
 }

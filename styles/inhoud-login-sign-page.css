@@ -1,0 +1,21 @@
+/* inhoud-login-signup-page.css, opmaak inhoud */
+
+#container-log-sign>div>div {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.block>div>h1 {
+  font-size: 3rem;
+  white-space: nowrap;
+  color: #fff;
+  text-shadow: 0.3rem 0.3rem var(--puzlo-grijs);
+}
+
+.block>div>form>button {
+  align-self: center;
+}
