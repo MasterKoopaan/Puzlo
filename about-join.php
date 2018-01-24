@@ -19,11 +19,18 @@
       <div class="titelheader">
         <h1>Dit is de titel van dit.</h1>
       </div>
+
       <div class="container-aboutgrid">
-        <div class="about-item text text-1"></div>
+        <div class="about-item text text-1">
+          <h1 class="titel-info-aboutgrid">Titel1</h1>
+          <p>Hier komt wat fijne text in te komen staan. denk aan informatie over dit onderdeeltje van het kompleete plaatje van de site Puzlo. Cool toch!</p>
+        </div>
         <div class="about-item img img-1"></div>
 
-        <div class="about-item text text-2"></div>
+        <div class="about-item text text-2">
+          <h1 class="titel-info-aboutgrid">Titel2</h1>
+          <p>Hier komt wat fijne text in te komen staan. denk aan informatie over dit onderdeeltje van het kompleete plaatje van de site Puzlo. Cool toch!</p>
+        </div>
         <div class="about-item img img-2"></div>
 
         <div class="about-item text text-3"></div>

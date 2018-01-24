@@ -16,6 +16,6 @@
   text-shadow: 0.3rem 0.3rem var(--puzlo-grijs);
 }
 
-.block>div>form>button {
-  align-self: center;
+.block>div>form {
+  text-align: center;
 }
