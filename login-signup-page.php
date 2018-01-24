@@ -13,13 +13,19 @@
 
   <?php
     include 'php/header.php';
+    // $state = $_GET["state"];
+    // if ($state = "sign") {
+    //   displayLoginFunction();
+    // } else {
+    //   displaySignupFunction();
+    // }
   ?>
 
     <main>
 
       <div id="container-log-sign">
 
-        <div class="block login block-display">
+        <div id="blocklogin" class="block login ">
           <div>
             <h1>Login</h1>
             <p>korte informatie. join puzlo en krijg bereik tot vele voordelen in je dagelijkse shopehlic life!</p>
@@ -33,7 +39,7 @@
             </form>
           </div>
         </div>
-        <div class="block sign-up">
+        <div id="blocksignup" class="block sign-up">
 
         </div>
       </div>
