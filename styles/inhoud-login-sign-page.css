@@ -37,7 +37,7 @@
 .block>div>form>input {
   font-size: 1.2rem;
   margin-bottom: 15px;
-  background-color: var(--puzlo-grijs);
+  background-color: var(--puzlo-bg-blauw-darker);
   padding: 0.3rem;
   border: none;
   color: #fff;
@@ -65,26 +65,18 @@
   box-shadow: 0.2rem 0.2rem var(--puzlo-groen-darker);
 }
 
-/* #user-login .button-nav {
-  flex: 1;
-  max-width: 9rem;
-  padding: 0.5rem 0;
-  margin-right: 1rem;
-  border-radius: 1rem;
-  transition: all 200ms linear;
-  text-decoration: none;
-  text-align: center;
-  font-size: 1.5rem;
-  color: #fff;
+/* signup kleur aanpasingen */
+
+.block>div>.form-signup>button {
+  background-color: var(--puzlo-rood);
+  border-color: var(--puzlo-rood);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-rood-darker);
 }
 
-#user-login .login:hover {
-  transform: translate(0.2rem, 0.2rem);
-  box-shadow: 0.2rem 0.2rem var(--puzlo-groen-darker);
+.block>div>.form-signup>button:hover {
+  box-shadow: 0.2rem 0.2rem var(--puzlo-rood-darker);
 }
 
-#user-login .login {
-  background-color: var(--puzlo-groen);
-  border-color: var(--puzlo-groen);
-  box-shadow: 0.4rem 0.4rem var(--puzlo-groen-darker);
-} */
+.block>div>.form-signup {
+  color: var(--puzlo-rood);
+}
