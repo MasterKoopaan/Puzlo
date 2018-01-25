@@ -37,6 +37,7 @@
               <br>
               <button type="submit" name="sumit">Login</button>
             </form>
+            <p class="note-text">*Alleen bedrijf acounts kunnen inloggen op het moment*</p>
           </div>
         </div>
         <div id="blocksignup" class="block sign-up">

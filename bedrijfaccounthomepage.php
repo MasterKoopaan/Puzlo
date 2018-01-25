@@ -16,13 +16,15 @@
     <main>
       <div id="container-bedrijfoptions">
         <div class="optie optie-1">
-          <a href="index.php">Results:</a>
+          <a href="bedrijfdataanalyse.php">Results:</a>
         </div>
         <div class="optie optie-2">
           <a>codes:</a>
+          <p class="note-text2">*nog niet werkend*</p>
         </div>
         <div class="optie optie-3">
           <a>settings:</a>
+          <p class="note-text2">*nog niet werkend*</p>
         </div>
       </div>
     </main>
