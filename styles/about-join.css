@@ -153,6 +153,30 @@
   background-size: cover;
 }
 
+/* opmaak aboutpage */
+
+.container-aboutgrid .about-item.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-aboutgrid div h1 {
+  color: #fff;
+  text-shadow: 0.2rem 0.2rem var(--puzlo-grijs);
+  font-size: 1.5rem;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.container-aboutgrid div p {
+  font-size: 1rem;
+  color: #fff;
+  margin: 0 10px;
+  /* align-text: center; */
+  flex: 1;
+}
+
 /* media query grid en items*/
 
 @media (max-width: 1200px) {

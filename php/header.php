@@ -8,7 +8,7 @@
           <ul>
             <li><a href="about.php#puzlo">Puzlo</a></li>
             <li><a href="login-signup-page.php">Signup</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="bedrijfaccounthomepage.php">FAQ</a></li>
             <li><a href="about-join.php">Join</a></li>
           </ul>
         </li>
@@ -26,8 +26,8 @@
 
   <div id="header-user">
     <div id="user-login">
-      <a href="login-signup-page.php" class="button-nav login">Login</a>
-      <a href="login-signup-page.php" class="button-nav signup">Sign up</a>
+      <a href="login-signup-page.php?state=login" class="button-nav login">Login</a>
+      <a href="login-signup-page.php?state=sign" class="button-nav signup">Sign up</a>
     </div>
     <div id="user-loggedin"></div>
   </div>

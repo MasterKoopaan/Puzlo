@@ -6,8 +6,8 @@
 @import url('about-join.css');
 @import url('login-signup-page.css');
 @import url('inhoud-login-sign-page.css');
-/* @import url('content.css'); */
-
+@import url('container-bedrijfoptions.css');
+@import url('bedrijfdatanalyse.css');
 /* @import url('footer.css'); */
 
 /* @import url('style.css'); */
@@ -35,6 +35,8 @@
   --puzlo-bg-blauw: rgba(73, 182, 243, 1);
   --puzlo-bg-blauw-darker: rgba(61, 155, 204, 1);
   --puzlo-grijs: rgb(120, 126, 124);
+  --puzlo-bg-paars: rgb(174, 102, 234);
+  --puzlo-bg-paars-darker: rgb(170, 84, 243);
 }
 
 /*basics*/

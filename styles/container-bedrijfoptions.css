@@ -1,0 +1,46 @@
+#container-bedrijfoptions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100vw;
+  height: calc(100vh - var(--header-height));
+}
+
+#container-bedrijfoptions .optie {
+  position: relative;
+  background-color: var(--puzlo-bg-blauw);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-bg-blauw-darker);
+  border-radius: 30px;
+  margin: auto;
+  width: calc(100vw * 0.25);
+  height: calc(100vw * 0.25);
+}
+
+#container-bedrijfoptions .optie a {
+  display: block;
+  width: 100%;
+  padding-top: 50%;
+  padding-bottom: 40%;
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  text-shadow: 0.3rem 0.3rem var(--puzlo-grijs);
+}
+
+.note-text2 {
+  position: relative;
+  font-style: italic;
+  color: #fff;
+  bottom: 10%;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  #container-bedrijfoptions {
+    grid-template-columns: 1fr;
+  }
+  #container-bedrijfoptions .optie {
+    width: calc(100vw * 0.75);
+    height: calc(100vw * 0.75);
+    margin: 10px auto;
+  }
+}

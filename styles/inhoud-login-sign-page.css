@@ -1,0 +1,88 @@
+/* inhoud-login-signup-page.css, opmaak inhoud */
+
+#container-log-sign>div>div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  color: #fff;
+}
+
+.block>div>h1 {
+  font-size: 3rem;
+  white-space: nowrap;
+  text-shadow: 0.3rem 0.3rem var(--puzlo-grijs);
+  margin-top: 10%;
+}
+
+.block>div>p {
+  margin-top: 4%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.block>div>form {
+  margin-top: 7%;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: var(--puzlo-groen);
+  box-shadow: 0.3rem 0.3rem var(--puzlo-grijs);
+}
+
+.block>div>form>input {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  background-color: var(--puzlo-bg-blauw-darker);
+  padding: 0.3rem;
+  border: none;
+  color: #fff;
+}
+
+.block>div>form>button {
+  display: inline-block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border: none;
+  transition: all 200ms linear;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 0.5rem 0;
+  width: 9rem;
+  background-color: var(--puzlo-groen);
+  border-color: var(--puzlo-groen);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-groen-darker);
+  color: #fff;
+  margin-top: 2%;
+}
+
+.block>div>form>button:hover {
+  transform: translate(0.2rem, 0.2rem);
+  box-shadow: 0.2rem 0.2rem var(--puzlo-groen-darker);
+}
+
+/* signup kleur aanpasingen */
+
+.block>div>.form-signup>button {
+  background-color: var(--puzlo-rood);
+  border-color: var(--puzlo-rood);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-rood-darker);
+}
+
+.block>div>.form-signup>button:hover {
+  box-shadow: 0.2rem 0.2rem var(--puzlo-rood-darker);
+}
+
+.block>div>.form-signup {
+  color: var(--puzlo-rood);
+}
+
+.note-text {
+  position: relative;
+  bottom: 0%;
+  font-style: italic;
+}
