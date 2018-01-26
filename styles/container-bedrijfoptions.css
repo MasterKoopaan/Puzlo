@@ -7,8 +7,8 @@
 
 #container-bedrijfoptions .optie {
   position: relative;
-  background-color: var(--puzlo-bg-paars);
-  box-shadow: 0.4rem 0.4rem var(--puzlo-bg-paars-darker);
+  background-color: var(--puzlo-bg-blauw);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-bg-blauw-darker);
   border-radius: 30px;
   margin: auto;
   width: calc(100vw * 0.25);

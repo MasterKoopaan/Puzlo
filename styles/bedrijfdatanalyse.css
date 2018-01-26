@@ -1,0 +1,85 @@
+.container-bedrijfdataanalyse {
+  display: block;
+  /* height: calc(100vh - var(--header-height)); */
+  width: 90vw;
+  margin: 2rem auto;
+  background-color: var(--puzlo-bg-blauw);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-bg-blauw-darker);
+  border-radius: 30px;
+}
+
+.container-bedrijfdataanalyse div {
+  margin: 2rem;
+}
+
+.container-analyseopties {
+  display: grid;
+  height: 4rem;
+  grid-template-columns: repeat(5, 1fr);
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.container-analyseopties a {
+  display: block;
+  color: #fff;
+  text-shadow: 0.2rem 0.2rem var(--puzlo-grijs);
+  font-size: 2rem;
+  text-align: center;
+  margin: auto 1rem;
+  padding: 0.5rem auto;
+  background-color: var(--puzlo-bg-blauw);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-bg-blauw-darker);
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.container-analyseopties .button-1 {
+  background-color: var(--puzlo-rood);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-rood-darker);
+}
+
+.container-analyseopties .button-2 {
+  background-color: var(--puzlo-blauw);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-blauw-darker);
+}
+
+.container-analyseopties .button-3 {
+  background-color: var(--puzlo-oranje);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-oranje-darker);
+}
+
+.container-analyseopties .button-4 {
+  background-color: var(--puzlo-groen);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-groen-darker);
+}
+
+.container-analyseopties .button-5 {
+  background-color: var(--puzlo-geel);
+  box-shadow: 0.4rem 0.4rem var(--puzlo-geel-darker);
+}
+
+.container-analyseopties a:hover {
+  transform: translate(0.2rem, 0.2rem);
+  transition: all 200ms linear;
+}
+
+.container-analyseopties .button-1:hover {
+  box-shadow: 0.2rem 0.2rem var(--puzlo-rood-darker);
+}
+
+.container-analyseopties .button-2:hover {
+  box-shadow: 0.2rem 0.2rem var(--puzlo-blauw-darker);
+}
+
+.container-analyseopties .button-3:hover {
+  box-shadow: 0.2rem 0.2rem var(--puzlo-oranje-darker);
+}
+
+.container-analyseopties .button-4:hover {
+  box-shadow: 0.2rem 0.2rem var(--puzlo-groen-darker);
+}
+
+.container-analyseopties .button-5:hover {
+  box-shadow: 0.2rem 0.2rem var(--puzlo-geel-darker);
+}

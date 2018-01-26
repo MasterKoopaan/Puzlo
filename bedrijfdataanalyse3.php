@@ -30,7 +30,7 @@
     </main>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/Chart.min.js"></script>
-    <script type="text/javascript" src="js/users-chart.js"></script>
+    <script type="text/javascript" src="js/users-chart3.js"></script>
 </body>
 
 </html>
