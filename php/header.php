@@ -1,3 +1,4 @@
+<!-- werdt gebruikt om in alle paginas te linken maar omdat ik er een html format van heb gemaakt wordt dit niet meer gebruikt, voor een voorbeeld hoe het werd gebruikt kijk junk/themplate.php -->
 <header id="header">
 
   <nav id="navigatie">
